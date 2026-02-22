@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sandunga Travel — Experiencias de viaje curadas en Oaxaca, México. Vive la magia de Oaxaca con guías locales expertos y turismo sustentable.">
+  <meta name="keywords" content="viajes Oaxaca, turismo Oaxaca, tours Oaxaca, experiencias Oaxaca, viajes México, turismo sustentable, mezcal tour, Monte Albán">
+  <meta name="author" content="Sandunga Travel">
+  <meta property="og:title" content="Sandunga Travel — Vive Oaxaca por dentro">
+  <meta property="og:description" content="Experiencias de viaje curadas en Oaxaca. Cultura, gastronomía, naturaleza y tradición.">
+  <meta property="og:type" content="website">
+  <title>Sandunga Travel — Vive Oaxaca por dentro</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ====== HEADER / NAV ====== -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">
+        <img src="assets/images/logo.png" alt="Sandunga Travel" class="nav__logo-img nav__logo-img--default">
+        <img src="assets/images/logo-scrolled.png" alt="Sandunga Travel" class="nav__logo-img nav__logo-img--scrolled">
+      </a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#inicio" class="nav__link active">Inicio</a></li>
+          <li class="nav__item"><a href="#nosotros" class="nav__link">Nosotros</a></li>
+          <li class="nav__item"><a href="#destinos" class="nav__link">Destinos</a></li>
+          <li class="nav__item"><a href="#testimonios" class="nav__link">Testimonios</a></li>
+          <li class="nav__item"><a href="#contacto" class="nav__link nav__link--cta">Contáctanos</a></li>
+        </ul>
+        <button class="nav__close" id="nav-close" aria-label="Cerrar menú">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menú">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ====== HERO ====== -->
+    <section class="hero" id="inicio">
+      <div class="hero__slideshow">
+        <div class="hero__slide hero__slide--active" style="background-image: url('assets/images/hero-monte-alban.png')"></div>
+        <div class="hero__slide" style="background-image: url('assets/images/hero-hierve-el-agua.png')"></div>
+        <div class="hero__slide" style="background-image: url('assets/images/hero-alebrijes.png')"></div>
+      </div>
+      <div class="hero__overlay"></div>
+      <div class="hero__content container">
+        <span class="hero__badge animate-on-scroll">Oaxaca, México</span>
+        <h1 class="hero__title animate-on-scroll">Vive <em>Oaxaca</em> por dentro</h1>
+        <p class="hero__subtitle animate-on-scroll">Viajes que conectan con la esencia de Oaxaca: su cultura milenaria, su gastronomía inigualable y la calidez de su gente.</p>
+        <div class="hero__actions animate-on-scroll">
+          <a href="#destinos" class="btn btn--primary">Ver destinos</a>
+          <a href="#destinos" class="btn btn--outline">Conecta con la artesanía</a>
+        </div>
+        <div class="hero__stats animate-on-scroll">
+          <div class="hero__stat">
+            <span class="hero__stat-number" data-count="15">0</span><span class="hero__stat-plus">+</span>
+            <span class="hero__stat-label">Destinos turísticos</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-number" data-count="100">0</span><span class="hero__stat-plus">%</span>
+            <span class="hero__stat-label">Guías locales</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero__scroll">
+        <a href="#nosotros" aria-label="Desplazarse abajo">
+          <i class="fa-solid fa-chevron-down"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- ====== ABOUT / VALUE PROPOSITION ====== -->
+    <section class="about section" id="nosotros">
+      <div class="container">
+        <div class="about__grid">
+          <div class="about__images animate-on-scroll">
+            <div class="about__img-wrapper about__img-wrapper--main">
+              <img src="assets/images/about-main.png" alt="Día de Muertos en Oaxaca" loading="lazy">
+            </div>
+            <div class="about__img-wrapper about__img-wrapper--secondary">
+              <img src="assets/images/about-secondary.png" alt="Traje típico oaxaqueño" loading="lazy">
+            </div>
+            <div class="about__experience-badge">
+              <span class="about__experience-number"><i class="fa-solid fa-heart" style="font-size:1.6rem"></i></span>
+              <span class="about__experience-text">Hecho en<br>Oaxaca</span>
+            </div>
+          </div>
+
+          <div class="about__content animate-on-scroll">
+            <span class="section__subtitle">Sobre nosotros</span>
+            <h2 class="section__title">Más que un viaje, una <em>experiencia auténtica</em></h2>
+            <p class="about__text">Viajar es mucho más que visitar un lugar: es sumergirte en la cultura, probar sabores que no encontrarás en otro sitio y crear recuerdos que transforman. Sandunga Travel nació en Oaxaca. Conocemos cada rincón de nuestra mágica tierra.</p>
+            <p class="about__text">Somos un equipo de oaxaqueños apasionados, listos para compartir contigo lo mejor de nuestra cultura con experiencias únicas, responsables y auténticas.</p>
+
+            <div class="about__features">
+              <div class="about__feature">
+                <div class="about__feature-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                <div>
+                  <h3 class="about__feature-title">Guías locales expertos</h3>
+                  <p class="about__feature-text">Oaxaqueños que conocen y aman su tierra</p>
+                </div>
+              </div>
+              <div class="about__feature">
+                <div class="about__feature-icon"><i class="fa-solid fa-leaf"></i></div>
+                <div>
+                  <h3 class="about__feature-title">Turismo sustentable</h3>
+                  <p class="about__feature-text">Viajes que te acercan a las comunidades locales</p>
+                </div>
+              </div>
+              <div class="about__feature">
+                <div class="about__feature-icon"><i class="fa-solid fa-route"></i></div>
+                <div>
+                  <h3 class="about__feature-title">Itinerarios personalizados</h3>
+                  <p class="about__feature-text">Cada viaje es único, diseñado a tu medida</p>
+                </div>
+              </div>
+              <div class="about__feature">
+                <div class="about__feature-icon"><i class="fa-solid fa-heart"></i></div>
+                <div>
+                  <h3 class="about__feature-title">Experiencias auténticas</h3>
+                  <p class="about__feature-text">Conecta con las tradiciones y la cultura viva</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== FEATURED DESTINATIONS ====== -->
+    <section class="destinations section" id="destinos">
+      <div class="container">
+        <div class="section__header animate-on-scroll">
+          <span class="section__subtitle">Destinos</span>
+          <h2 class="section__title">Explora los rincones más <em>mágicos de Oaxaca</em></h2>
+          <p class="section__description">Desde zonas arqueológicas milenarias hasta playas vírgenes en la costa del Pacífico, Oaxaca tiene un destino para cada tipo de viajero.</p>
+        </div>
+
+        <div class="destinations__grid">
+          <article class="destination-card animate-on-scroll" data-category="cultura">
+            <div class="destination-card__image">
+              <img src="assets/images/monte-alban-card.png" alt="Monte Albán" loading="lazy">
+              <span class="destination-card__badge destination-card__badge--gold">4 en 1</span>
+            </div>
+            <div class="destination-card__content">
+              <div class="destination-card__location"><i class="fa-solid fa-location-dot"></i> Valles Centrales</div>
+              <h3 class="destination-card__title">Tour Monte Albán</h3>
+              <p class="destination-card__text">Descubre la majestuosa zona arqueológica de Monte Albán, conoce el arte de los alebrijes, explora la tradición del barro negro y degusta mezcales artesanales en un recorrido completo por la cultura oaxaqueña.</p>
+              <div class="destination-card__footer">
+                <span class="destination-card__price">Desde <strong>$500 MXN</strong> <small>(accesos no incluídos)</small></span>
+                <a href="tours/tour-monte-alban.html" class="btn btn--small">Conocer más</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="destination-card animate-on-scroll" data-category="cultura">
+            <div class="destination-card__image">
+              <img src="assets/images/hierve-el-agua.png" alt="Hierve el Agua" loading="lazy">
+              <span class="destination-card__badge destination-card__badge--gold">5 en 1</span>
+            </div>
+            <div class="destination-card__content">
+              <div class="destination-card__location"><i class="fa-solid fa-location-dot"></i> Valles Centrales</div>
+              <h3 class="destination-card__title">Tour Hierve el Agua</h3>
+              <p class="destination-card__text">Un día completo recorriendo lo mejor de los Valles Centrales: el árbol milenario del Tule, los tradicionales tapetes de lana, las grecas de Mitla, las cascadas petrificadas de Hierve el Agua y un palenque de mezcal artesanal.</p>
+              <div class="destination-card__footer">
+                <span class="destination-card__price">Desde <strong>$700 MXN</strong> <small>(accesos no incluídos)</small></span>
+                <a href="tours/tour-hierve-el-agua.html" class="btn btn--small">Conocer más</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="destination-card animate-on-scroll" data-category="playa">
+            <div class="destination-card__image">
+              <img src="assets/images/huatulco.png" alt="Playas de Huatulco, Costa Oaxaqueña" loading="lazy">
+            </div>
+            <div class="destination-card__content">
+              <div class="destination-card__location"><i class="fa-solid fa-location-dot"></i> Costa Oaxaqueña</div>
+              <h3 class="destination-card__title">Huatulco, Puerto Escondido, Mazunte y Zipolite</h3>
+              <p class="destination-card__text">Bahías de aguas cristalinas rodeadas de selva tropical, playas bohemias y liberación de tortugas. Snorkel, kayak y atardeceres que quedarán grabados en tu memoria.</p>
+              <div class="destination-card__footer">
+                <span class="destination-card__price"><strong>Viaje Privado</strong></span>
+                <a href="destinations/huatulco-puerto-escondido.html" class="btn btn--small">Conocer más</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== TRANSPORTATION ====== -->
+    <section class="transport section" id="transporte">
+      <div class="container">
+        <div class="section__header animate-on-scroll">
+          <span class="section__subtitle">Transporte</span>
+          <h2 class="section__title">Te llevamos a cualquier <em>rincón de México</em></h2>
+          <p class="section__description">Además de nuestros tours en Oaxaca, ofrecemos servicio de transporte privado y cómodo a los destinos más populares del país.</p>
+        </div>
+
+        <div class="transport__grid">
+          <div class="transport__card animate-on-scroll">
+            <div class="transport__image">
+              <img src="assets/images/transport-cdmx.png" alt="Ciudad de México" loading="lazy">
+            </div>
+            <div class="transport__content">
+              <h3 class="transport__title">Oaxaca — Ciudad de México</h3>
+              <div class="transport__details">
+                <span><i class="fa-regular fa-clock"></i> 6 horas
+                  aproximadamente</span>
+                <span><i class="fa-solid fa-road"></i> 460 km</span>
+              </div>
+              <p class="transport__text">Viaja cómodo y sin escalas desde Oaxaca hasta CDMX. Salidas diarias con paradas opcionales en Puebla.</p>
+            </div>
+          </div>
+
+          <div class="transport__card animate-on-scroll">
+            <div class="transport__image">
+              <img src="assets/images/transport-puebla.png" alt="Puebla" loading="lazy">
+            </div>
+            <div class="transport__content">
+              <h3 class="transport__title">Oaxaca — Puebla</h3>
+              <div class="transport__details">
+                <span><i class="fa-regular fa-clock"></i> 4 horas
+                  aproximadamente</span>
+                <span><i class="fa-solid fa-road"></i> 340 km</span>
+              </div>
+              <p class="transport__text">Transporte directo a la ciudad de los ángeles. Ideal para conectar con otros destinos del centro del país.</p>
+            </div>
+          </div>
+
+          <div class="transport__card animate-on-scroll">
+            <div class="transport__image">
+              <img src="assets/images/transport-queretaro.png" alt="Querétaro" loading="lazy">
+            </div>
+            <div class="transport__content">
+              <h3 class="transport__title">Oaxaca — Querétaro</h3>
+              <div class="transport__details">
+                <span><i class="fa-regular fa-clock"></i> 7 horas
+                  aproximadamente</span>
+                <span><i class="fa-solid fa-road"></i> 550 km</span>
+              </div>
+              <p class="transport__text">Descubre la ciudad Patrimonio de la Humanidad. Ruta cómoda con paisajes del centro de México.</p>
+            </div>
+          </div>
+
+          <div class="transport__card animate-on-scroll">
+            <div class="transport__image">
+              <img src="assets/images/transport-guanajuato.png" alt="Guanajuato" loading="lazy">
+            </div>
+            <div class="transport__content">
+              <h3 class="transport__title">Oaxaca — Guanajuato</h3>
+              <div class="transport__details">
+                <span><i class="fa-regular fa-clock"></i> 8 horas
+                  aproximadamente</span>
+                <span><i class="fa-solid fa-road"></i> 620 km</span>
+              </div>
+              <p class="transport__text">Viaja a la ciudad colonial más colorida de México. Transporte privado con todas las comodidades.</p>
+            </div>
+          </div>
+
+          <div class="transport__card animate-on-scroll">
+            <div class="transport__image">
+              <img src="assets/images/transport-chiapas.png" alt="San Cristóbal de las Casas" loading="lazy">
+            </div>
+            <div class="transport__content">
+              <h3 class="transport__title">Oaxaca — Chiapas (San Cristóbal)</h3>
+              <div class="transport__details">
+                <span><i class="fa-regular fa-clock"></i>10 horas
+                  aproximadamente</span>
+                <span><i class="fa-solid fa-road"></i> 650 km</span>
+              </div>
+              <p class="transport__text">Conecta dos de los estados más culturales de México. Paisajes impresionantes durante todo el trayecto.</p>
+            </div>
+          </div>
+
+          <div class="transport__card animate-on-scroll">
+            <div class="transport__image">
+              <img src="assets/images/transport-veracruz.png" alt="Veracruz" loading="lazy">
+            </div>
+            <div class="transport__content">
+              <h3 class="transport__title">Oaxaca — Veracruz</h3>
+              <div class="transport__details">
+                <span><i class="fa-regular fa-clock"></i> 6 horas
+                  aproximadamente</span>
+                <span><i class="fa-solid fa-road"></i> 380 km</span>
+              </div>
+              <p class="transport__text">Viaja al puerto jarocho con la comodidad de un transporte privado. Ruta con vistas a la Sierra Madre.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="transport__footer animate-on-scroll">
+          <p class="transport__note"><i class="fa-solid fa-circle-info"></i> Todos los traslados incluyen vehículo privado, conductor profesional y seguro de viajero. ¿Necesitas otra ruta? Contáctanos.</p>
+          <a href="#contacto" class="btn btn--primary">Solicitar transporte</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== WHY CHOOSE US ====== -->
+    <section class="why-us section">
+      <div class="why-us__bg"></div>
+      <div class="container">
+        <div class="section__header animate-on-scroll">
+          <span class="section__subtitle section__subtitle--light">¿Por qué elegirnos?</span>
+          <h2 class="section__title section__title--light">Tu viaje perfecto, <em>nuestro compromiso</em></h2>
+        </div>
+
+        <div class="why-us__grid">
+          <div class="why-us__card animate-on-scroll">
+            <div class="why-us__icon"><i class="fa-solid fa-gem"></i></div>
+            <h3 class="why-us__title">Confort en Cada Paso</h3>
+            <p class="why-us__text">Vehículos cómodos y atención a cada detalle para que no sólo disfrutes el destino, también el viaje.</p>
+          </div>
+          <div class="why-us__card animate-on-scroll">
+            <div class="why-us__icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <h3 class="why-us__title">Viaja Seguro</h3>
+            <p class="why-us__text">Transporte verificado y conductores confiables en cada recorrido. Tu tranquilidad es nuestra prioridad.</p>
+          </div>
+          <div class="why-us__card animate-on-scroll">
+            <div class="why-us__icon"><i class="fa-solid fa-compass"></i></div>
+            <h3 class="why-us__title">Experiencias Auténticas</h3>
+            <p class="why-us__text">Mercados reales, familias locales y talleres con artesanos. Evitamos lo genérico para que vivas el Oaxaca verdadero.</p>
+          </div>
+          <div class="why-us__card animate-on-scroll">
+            <div class="why-us__icon"><i class="fa-solid fa-map-location-dot"></i></div>
+            <h3 class="why-us__title">Guías Expertos</h3>
+            <p class="why-us__text">Nuestros guías son oaxaqueños apasionados que comparten historias, secretos y tradiciones que no encontrarás en ninguna guía turística.</p>
+          </div>
+          <div class="why-us__card animate-on-scroll">
+            <div class="why-us__icon"><i class="fa-solid fa-route"></i></div>
+            <h3 class="why-us__title">Itinerarios flexibles</h3>
+            <p class="why-us__text">Rutas a tu medida según tus gustos, tiempo y presupuesto. Cultura, playa, gastronomía o la mezcla que prefieras, incluso fuera de Oaxaca.</p>
+          </div>
+          <div class="why-us__card animate-on-scroll">
+            <div class="why-us__icon"><i class="fa-solid fa-seedling"></i></div>
+            <h3 class="why-us__title">Turismo Responsable</h3>
+            <p class="why-us__text">Trabajamos de la mano con artesanos y productores locales y cuidamos el medio ambiente. Cada viaje tiene un impacto positivo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== TESTIMONIALS ====== -->
+    <section class="testimonials section" id="testimonios">
+      <div class="container">
+        <div class="section__header animate-on-scroll">
+          <span class="section__subtitle">Testimonios</span>
+          <h2 class="section__title">Lo que dicen nuestros <em>viajeros</em></h2>
+          <p class="section__description">Nuestros primeros viajeros ya están compartiendo sus historias. Esto es lo que dicen.</p>
+        </div>
+
+        <div class="testimonials__grid">
+            <div class="testimonial-card animate-on-scroll">
+              <div class="testimonial-card__stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <blockquote class="testimonial-card__text">
+                "¡Una experiencia inolvidable! Quiero agradecerles ampliamente,
+                Sandunga Travel. Todo fue mágico, gracias a la atención tan
+                cálida y profesional que recibí desde el primer momento; te
+                hacen sentir cuidada y en confianza. Oaxaca es un tesoro, pero
+                conocerlo con un equipo tan apasionado marca toda la diferencia.
+                Seguridad, calidez y una logística impecable para descubrir las
+                maravillas de México. ¡Sin duda, volveré a repetir!"
+              </blockquote>
+              <div class="testimonial-card__author">
+                <div class="testimonial-card__avatar">
+                  <img src="assets/images/testimonial-alexandra-medina.png" alt="Alexandra Medina Sotelo" loading="lazy">
+                </div>
+                <div>
+                  <cite class="testimonial-card__name">Alexandra Medina Sotelo</cite>
+                  <span class="testimonial-card__location">Toluca, Estado de México</span>
+                  <span class="testimonial-card__trip">Tour Monte Albán</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card animate-on-scroll">
+              <div class="testimonial-card__stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <blockquote class="testimonial-card__text">
+                "¡Hola, Sandunga Travel! Muchas gracias por el inolvidable paseo.
+                El servicio que ofrecen es excelente, con itinerarios que te
+                permiten hacer todo lo soñado y disfrutar con holgura. La
+                calidez de los anfitriones también es insuperable, tienen un
+                conocimiento muy fino sobre los lugares del recorrido y siempre
+                están dispuestos a darte las mejores recomendaciones. Yo planeé
+                este viaje con mi familia a los valles centrales de Oaxaca para
+                celebrar mi cumpleaños y quedé fascinada. ¡Muchas gracias por
+                todo!
+              </blockquote>
+              <div class="testimonial-card__author">
+                <div class="testimonial-card__avatar">
+                  <img src="assets/images/testimonial-marisol-rodriguez.png" alt="Marisol Rodríguez M." loading="lazy">
+                </div>
+                <div>
+                  <cite class="testimonial-card__name">Marisol Rodríguez M.</cite>
+                  <span class="testimonial-card__location">Ciudad de México</span>
+                  <span class="testimonial-card__trip">Tour Hierve el Agua</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card animate-on-scroll">
+              <div class="testimonial-card__stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <blockquote class="testimonial-card__text">
+                "El servicio al igual que el trato del operador fue excelente.
+                Saludos al buen amigo Oscar que se portó súper."
+              </blockquote>
+              <div class="testimonial-card__author">
+                <div class="testimonial-card__avatar">
+                  <img src="assets/images/testimonial-emilio-sanchez.png" alt="Emilio Sánchez" loading="lazy">
+                </div>
+                <div>
+                  <cite class="testimonial-card__name">Emilio Sánchez</cite>
+                  <span class="testimonial-card__location">Oaxaca</span>
+                  <span class="testimonial-card__trip">Transporte privado</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card animate-on-scroll">
+              <div class="testimonial-card__stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <blockquote class="testimonial-card__text">
+                "Fue un tour muy completo: conocimos la Sierra Juárez, la Ruta del
+                Mezcal, camioneta nueva y limpia, entre otros. El servicio estuvo
+                bien coordinado; en otras palabras, fue excelente y vale la pena
+                recomendar.
+              </blockquote>
+              <div class="testimonial-card__author">
+                <div class="testimonial-card__avatar">
+                  <img src="assets/images/testimonial-eduardo-evaristo.png" alt="Grupo de viajeros junto a un río en la Sierra Juárez durante un tour" loading="lazy">
+                </div>
+                <div>
+                  <cite class="testimonial-card__name">Eduardo Evaristo</cite>
+                  <span class="testimonial-card__location">Oaxaca</span>
+                  <span class="testimonial-card__trip">Sierra Juárez y Ruta del Mezcal</span>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== CONTACT ====== -->
+    <section class="cta section" id="contacto">
+      <div class="cta__bg-pattern"></div>
+      <div class="container">
+        <div class="cta__grid animate-on-scroll">
+          <div class="cta__content">
+            <span class="section__subtitle section__subtitle--light">Contáctanos</span>
+            <h2 class="section__title section__title--light">Empieza a planear tu <em>viaje soñado</em></h2>
+            <p class="cta__text">Cuéntanos qué tipo de experiencia buscas y diseñaremos el viaje perfecto para ti. Responderemos en menos de 24 horas.</p>
+            <form class="cta__form" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="3ddb615b-3cce-410f-80a6-a6218e9cffff">
+              <div class="cta__form-grid">
+                <input type="text" class="cta__input" placeholder="Tu nombre" required aria-label="Nombre", name="name">
+                <input type="email" class="cta__input" placeholder="Tu correo electrónico" required aria-label="Correo electrónico">
+                <input type="tel" class="cta__input" placeholder="Tu teléfono (opcional)" aria-label="Teléfono">
+                <select class="cta__input cta__select" aria-label="Destino de interés">
+                  <option value="" disabled selected>Destino de interés</option>
+                  <option value="monte-alban">Monte Albán</option>
+                  <option value="hierve-el-agua">Hierve el Agua</option>
+                  <option value="huatulco">Playas de Huatulco</option>
+                  <option value="mitla">Mitla</option>
+                  <option value="sierra-norte">Sierra Norte</option>
+                  <option value="mazunte-zipolite">Mazunte & Zipolite</option>
+                  <option value="otro">Otro</option>
+                </select>
+                <textarea class="cta__input cta__textarea"
+                  placeholder="Cuéntanos sobre el viaje que imaginas..."
+                  rows="4" required aria-label="Mensaje" name="message"></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary btn--glow">
+                <span>Enviar mensaje</span>
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+              <p class="cta__disclaimer">Al enviar aceptas nuestra <a href="#">política de privacidad</a>. Nunca compartiremos tu información.</p>
+            </form>
+          </div>
+          <div class="cta__image-wrapper">
+            <img src="assets/images/cta-hierve-el-agua.png" alt="Hierve el Agua, Oaxaca" loading="lazy" class="cta__image">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="assets/images/logo.png" alt="Sandunga Travel" class="footer__logo">
+          <p class="footer__tagline">Conectando viajeros con la esencia de Oaxaca.</p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="footer__social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="footer__social-link" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" class="footer__social-link" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="footer__links">
+          <h4 class="footer__heading">Explorar</h4>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#destinos">Destinos</a></li>
+            <li><a href="#testimonios">Testimonios</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__links">
+          <h4 class="footer__heading">Destinos</h4>
+          <ul>
+            <li><a href="destinations/monte-alban.html">Monte Albán</a></li>
+            <li><a href="destinations/valles-centrales.html">Valles Centrales</a></li>
+            <li><a href="destinations/huatulco-puerto-escondido.html">Costa Oaxaqueña</a></li>
+            <li><a href="destinations/mitla.html">Mitla</a></li>
+            <li><a href="destinations/el-tule.html">El Tule</a></li>
+            <li><a href="destinations/mazunte-zipolite.html">Mazunte & Zipolite</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__contact">
+          <h4 class="footer__heading">Contacto</h4>
+          <ul>
+            <li><i class="fa-solid fa-phone"></i> +52 951 615 4900</li>
+            <li><i class="fa-solid fa-envelope"></i> contacto@sandunga.travel</li>
+            <li><i class="fa-solid fa-location-dot"></i> Andador Rodolfo Nieto #8, Mz. 5,<br>Col. Nuevo México, San Jacinto Amilpas, Oaxaca.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="footer__certifications">
+          <span class="footer__cert"><i class="fa-solid fa-shield-halved"></i> Viajes seguros</span>
+          <span class="footer__cert"><i class="fa-solid fa-leaf"></i> Turismo sustentable</span>
+          <span class="footer__cert"><i class="fa-solid fa-award"></i> SECTUR certificado</span>
+        </div>
+        <p class="footer__copyright">&copy; <span id="copyright-year"></span> Sandunga Travel. Todos los derechos reservados.</p>
+        <div class="footer__legal">
+          <a href="#">Aviso de Privacidad</a>
+          <a href="#">Términos y Condiciones</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ====== FLOATING WHATSAPP BUTTON ====== -->
+  <a href="https://wa.me/529516154900?text=Hola%2C%20me%20interesa%20conocer%20más%20sobre%20sus%20tours" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- ====== BACK TO TOP ====== -->
+  <button class="back-to-top" id="back-to-top" aria-label="Volver al inicio">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
